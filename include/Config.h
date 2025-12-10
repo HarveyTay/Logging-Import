@@ -1,7 +1,6 @@
-#pragma once
 #include <string> 
 
-namespace harvey::loggingConfig
+namespace loggingConfig
 {
     std::string loggingDir; //location of output
     std::string baseFileName; //base name of log files
