@@ -1,8 +1,7 @@
-#pragma once
 #include <string>
 #include <cstdint>
 
-namespace harvey::Platform {
+namespace Platform {
 
     bool isWindows();
     bool isLinux();
@@ -15,7 +14,7 @@ namespace harvey::Platform {
     std::string getExecutableName();
 
     bool createDirectory(const std::string& path);
-    bool fileExists(const std::string& path);
+    std::string fileExists(const std::string& path);
 
     bool setFilePermissionsOwnerOnly(const std::string& path);
 }
